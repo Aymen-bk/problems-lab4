@@ -39,7 +39,7 @@ public class Sales
                 min_index = i;
             }
 
-            System.out.println(" " + i + " " + sales[i]);
+            System.out.println(" " + (i+1) + " " + sales[i]);
             sum += sales[i];
         }
         System.out.println("\nTotal sales: " + sum);
@@ -48,8 +48,8 @@ public class Sales
 
         System.out.println("\nAvergae sales : " + (sum/sales.length));
 
-        System.out.println("Salesperson "+ max_index+1 +" had the highest sale with $" + max_sale);
-        System.out.println("Salesperson "+ min_index+1 +" had the lowest sale with $" + min_sale);
+        System.out.println("Salesperson "+ (max_index+1) +" had the highest sale with $" + max_sale);
+        System.out.println("Salesperson "+ (min_index+1) +" had the lowest sale with $" + min_sale);
 
         System.out.println("Type a value not to be exceeded : ");
         int exceed =  scan.nextInt();
